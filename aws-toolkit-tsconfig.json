@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "module": "nodenext",
+        "inlineSourceMap": true,
+        "outDir": "/Users/ryancormack/code/ryancormack/reinvent-schemas",
+        "rootDir": ".",
+        "sourceRoot": "/Users/ryancormack/code/ryancormack/reinvent-schemas",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "types": [
+            "node"
+        ]
+    }
+}

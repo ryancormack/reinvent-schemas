@@ -1,0 +1,25 @@
+{
+  "detail": {
+    "metadata": {
+      "correlationId": "e02fe1b1-e9dc-49ee-84fc-f21a67b49757"
+    },
+    "data": {
+      "vehicle": {
+        "manufacturer": "Bentley",
+        "model": "Model S",
+        "salePrice": 33824,
+        "vrm": "NY98ABN",
+        "vin": "F0KE1GXH08YA74610",
+        "engine": "diesel"
+      }
+    }
+  },
+  "version": "0",
+  "id": "17793124-05d4-b198-2fde-7ededc63b103",
+  "resources": [],
+  "source": "demo-app",
+  "account": "111122223333",
+  "time": "2021-11-12T00:00:00Z",
+  "region": "eu-west-1",
+  "detail-type": "car"
+}

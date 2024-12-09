@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "reinvent-schemas:consumer/index.handler (nodejs20.x)",
+            "runtimeArgs": [
+                "--loader",
+                "ts-node/esm"
+            ],
+            "program": "${workspaceFolder}/scripts/invoke-lambda.mts",
+            "outFiles": ["${workspaceFolder}/**/*.js"],
+            "skipFiles": ["<node_internals>/**"],
+            "runtimeExecutable": "/Users/ryancormack/.nvm/versions/node/v20.17.0/bin/node",
+            "sourceMaps": true,
+            "resolveSourceMapLocations": [
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            ],
+            "env": {
+                "TS_NODE_PROJECT": "./tsconfig.json"
+            }
+        }
+        // {
+        //     "type": "aws-sam",
+        //     "request": "direct-invoke",
+        //     "name": "reinvent-schemas:consumer/index.handler (nodejs20.x)",
+        //     "invokeTarget": {
+        //         "target": "code",
+        //         "projectRoot": "${workspaceFolder}/",
+        //         "lambdaHandler": "index.handler"
+        //     },
+        //     "lambda": {
+        //         "runtime": "nodejs20.x",
+        //         "payload": {
+        //             "path": "${workspaceFolder}/consumer/test_data/carMockData.json"
+        //         },
+        //         "environmentVariables": {},
+        //     },
+        // }
+    ]
+}

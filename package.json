@@ -1,0 +1,29 @@
+{
+  "name": "reinvent-schemas",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "schema:build": "node --loader ts-node/esm scripts/buildSchema.mts",
+    "schema:download": "node --loader ts-node/esm scripts/downloadSchema.mts",
+    "test:generate": "node --loader ts-node/esm consumer/test_data/generate.mts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-lambda-powertools/logger": "2.10.0",
+    "@aws-lambda-powertools/parser": "2.10.0",
+    "@aws-sdk/client-schemas": "^3.699.0",
+    "@middy/core": "^5.5.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@anatine/zod-mock": "^3.13.4",
+    "@faker-js/faker": "^8.0.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/aws-lambda": "^8.10.146",
+    "json-schema-to-zod": "^2.4.1",
+    "ts-node": "^10.9.2",
+    "zod-to-json-schema": "^3.23.5"
+  }
+}
